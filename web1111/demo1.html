@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JEN COFFEE</title>
+
+
+    <link rel="stylesheet" href="./lightbox/css/lightbox.css">
+    <style>
+        .wrap {
+            width: 1200px;
+            margin: auto;
+            text-align: center;
+
+        }
+
+        body {
+            background-color: #c9bab4;
+            color: #432003;
+
+        }
+
+        /* 頁首區 */
+        .header {
+
+            /* 背景圖 */
+            /* background-image: url("./img/banner_bg.jpg"); */
+            width: 1200px;
+            height: 160px;
+            background-color: #c9bab4;
+            /* 定位基準點 */
+            position: relative;
+        }
+
+        /* 頁首區-左側logo */
+        /* 複合式規則 => 超過二個以上的規則名稱（包含二個） */
+        .header h1 {
+            position: absolute;
+            left: 140px;
+            top: 40px;
+        }
+
+        .header img {
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            left: 20px;
+            top: 10px;
+        }
+
+
+        /* 首頁區右側超連結色彩 */
+        .header h1 a {
+            /* 選單區超連結底線:取消 */
+            text-decoration: none;
+            /* 超連結字體顏色 */
+            color: #0e232a;
+        }
+
+        /* 頁首區-右側選單區超連結 */
+        .header ul {
+            /* 絕對定位 */
+            position: absolute;
+            right: 20px;
+            top: 50px;
+
+            /* 取消項目符號 */
+            list-style: none;
+        }
+
+        /* 頁首區-右側超連結清單水平排列 */
+        .header ul li {
+            float: left;
+            display: inline;
+            margin-right: 20px;
+            list-style: none;
+
+        }
+
+        /* 頁首區-右側選單區超連結色彩 */
+        .header ul li a {
+            /* 選單區超連結底線:取消 */
+            text-decoration: none;
+            /* 超連結字體顏色 */
+            color: #4a1d06;
+            /* 字體大小 */
+            font-size: 16px
+        }
+
+        /* 右側超連結被碰到時的變化 */
+        .header ul li a:hover {
+            /* 字體色 */
+            color: #4091aa;
+            /* 背景色 */
+            background-color: rgb(184, 184, 183);
+        }
+
+        .box {
+            margin: auto;
+            margin-bottom: 40px;
+        }
+
+        .box1 img {
+            width: 350px;
+            height: 350px;
+            text-align: center;
+        }
+
+
+        .box1 p {
+            text-align: center;
+            font-size: 18px;
+            color: #3a1e1e;
+        }
+
+        .box1 h1 {
+            color: #5a3838;
+        }
+
+
+        .box2 h2 {
+            color: #5a3838;
+            font-size: 20px;
+        }
+
+        .box2 {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .box2 p {
+            /* border: 1px solid red; */
+            width: 1200px;
+            margin: auto;
+            text-align: left;
+
+        }
+
+        .box2 ui li img {
+            width: 100%;
+            text-align: center;
+
+        }
+
+        .box1 {
+            /* border: 1px solid red; */
+            text-align: center;
+
+        }
+
+
+        /* 頁尾區 */
+        .footer {
+            /* border: 1px solid red; */
+            background-color: #7e7064;
+            color: #371804;
+            width: 1200px;
+
+            margin: auto;
+
+            /* text-align: center; */
+            /* padding: 20px 0; */
+        }
+
+        .footer .nav ul {
+            /* 項目清單選項 ● 取消 */
+            list-style: none;
+            /* 設定元素內容與元素自身上邊界的間距 */
+
+            /* 設定元素內容與元素自身下邊界的間距 */
+
+            /* display: inline; */
+
+        }
+
+        .footer .nav ul li {
+            /* 水平排列 */
+            display: inline-block;
+
+            /* 外間距=> margin */
+            margin-left: 150px;
+
+            /* 左右對齊 */
+            text-align: justify;
+        }
+
+        .footer .nav ul li img {
+            /* 寬度 */
+            width: 150px;
+            /* 高度 */
+            height: 120px;
+            /* 靠右對齊 */
+            /* 行內區塊可水平排列 */
+            display: inline-block;
+            /* 外間距=> margin */
+            margin-right: 5px;
+        }
+    </style>
+
+<body>
+
+    <!-- 最外層外框 -->
+    <div class="wrap">
+
+        <!-- 頁首區 -->
+        <div class="header">
+            <!-- 左側LOGO -->
+            <div class="coffee logo_icon"><a href="#"><img src="./images/coffee logo-03.png" alt="coffee logo_icon"></a>
+            </div>
+            <!-- 右上方JEN COFFEE (尚未設置點擊轉跳首頁) -->
+            <h1><a href="#"></a> JEN COFFEE</a></h1>
+
+            <!-- 右側超連結選單區 -->
+            <div class="nav">
+                <ul>
+                    <li><a href="../index.html">首頁</a></li>
+                    <li><a href="../idex002.html">購物區</a></li>
+                    <li><a href="#">關於我們</a></li>
+                    <li><a href="#">聯絡我們</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="box1">
+        <h1>JEN COFFEE-精品咖啡</h1>
+
+        <img src="./images/cafe01.jpg" alt="">
+
+        <img src="./images/cafe02.jpg" alt="">
+
+        <img src="./images/cafe03.jpg" alt="">
+    </div>
+
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./lightbox/js/lightbox.js"></script>
+
+
+
+    <div class="box2">
+        <h2>
+            JEN COFFEE-品牌理念
+        </h2>
+
+        <p>JEN COFFEE以「專注與用心」為核心，致力於將世界級莊園咖啡帶給每一位咖啡愛好者。
+            我們精選來自全球優質產地的咖啡豆，注重每一顆豆子的來源與風味，將產地特色完美呈
+            現於杯中。堅守「新鮮烘焙、客製化服務」的信念，每次烘焙皆依客人訂單需求製作，讓
+            每一杯咖啡保持最原始的新鮮與香氣。十年的專業烘焙經驗，讓我們能精準掌握咖啡豆的
+            最佳風味曲線。從接單到出貨，JEN COFFEE以專業與誠信服務每位顧客，烘焙完成後三日
+            內出貨，確保咖啡豆在最佳賞味期內到達您手中。對於咖啡，我們始終懷抱熱忱，追求完
+            美與創新，為您提供甘甜而不過酸、層次豐富的極致咖啡體驗。JEN COFFEE不僅為您提供
+            咖啡，更是與您分享對咖啡的堅持與熱情。</p>
+
+    </div>
+
+
+    <div class="box">
+        <ul>
+            <li>
+
+                <img src="./images/coffeep01.png" alt="">
+
+            </li>
+            <li>
+
+                <img src="./images/coffeep02.png" alt="">
+
+            </li>
+            <li>
+
+                <img src="./images/coffeep03.png" alt="">
+
+            </li>
+            <li>
+
+                <img src="./images/coffeep06.png" alt="">
+
+            </li>
+            <li>
+
+                <img src="./images/coffeep07.png" alt="">
+
+            </li>
+            <li>
+
+                <img src="./images/coffeep08.png" alt="">
+
+            </li>
+
+        </ul>
+    </div>
+
+
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./js/jquery.jcarousellite.min.js"></script>
+    <script>
+        $(function () {
+            $(".box").jCarouselLite({
+                auto: 1200,
+                speed: 900,
+                scroll: 1,
+                visible: 6,
+            });
+        });
+    </script>
+
+
+
+
+    <!-- 頁尾區 -->
+    <div class="footer">
+
+        <!-- 地址區 -->
+        <div class="nav">
+            <ul>
+                <li>
+                    <p><img src="./images/coffee logo-03.png" alt=""> </p>
+                    <h4>JEN COFFEE</h4>
+                </li>
+
+                <li>
+                    <h5>地址：桃園市桃園區巷善街168巷168號 </h5>
+                    <h5>訂購電話：0939168168</h5>
+                    <h5>信箱：jen.coffee@gmail.com </h5>
+                    <h5>統一編號：90168168 </h5>
+                    <h5>食品業登錄字號： F-202265508-00168-2</h5>
+                    <h5>工廠登記編號：65168168 </h5>
+                    <small>Copyright &copy; 2024 - JEN COFFEE版權所有. All rights reserved.</small></p>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

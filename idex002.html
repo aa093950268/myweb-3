@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JEN COFFEE</title>
+
+    <style>
+        /* 米字是萬用字元符號 => 所有的HTML標籤 */
+        * {
+            /* 取消預設邊界 */
+            margin: 0;
+            /* 取消預設縮排 */
+            padding: 0;
+            /* 字型 */
+            font-family: 'Times New Roman', Times, serif;
+            font-family: '微軟正黑體';
+        }
+
+
+        .wrap {
+            /* border:1px solid red; */
+            width: 1200px;
+            margin: auto;
+        }
+
+
+        body {
+            background-color: #c9bab4;
+            color: #432003;
+
+        }
+
+
+        /* 頁首區 */
+        .header {
+
+            /* 背景圖 */
+            /* background-image: url("./img/banner_bg.jpg"); */
+            width: 1200px;
+            height: 160px;
+            background-color: #c9bab4;
+            /* 定位基準點 */
+            position: relative;
+        }
+
+        /* 頁首區-左側logo */
+        /* 複合式規則 => 超過二個以上的規則名稱（包含二個） */
+        .header h1 {
+            position: absolute;
+            left: 140px;
+            top: 40px;
+        }
+
+        .header img {
+            width: 120px;
+            height: 120px;
+            position: absolute;
+            left: 20px;
+            top: 10px;
+        }
+
+        /* 首頁區右側超連結色彩 */
+        .header h1 a {
+            /* 選單區超連結底線:取消 */
+            text-decoration: none;
+            /* 超連結字體顏色 */
+            color: #0e232a;
+        }
+
+        /* 頁首區-右側選單區超連結 */
+        .header ul {
+            /* 絕對定位 */
+            position: absolute;
+            right: 20px;
+            top: 50px;
+
+            /* 取消項目符號 */
+            list-style: none;
+        }
+
+
+        /* 頁首區-右側超連結清單水平排列 */
+        .header ul li {
+            float: left;
+            display: inline;
+            margin-right: 20px;
+            list-style: none;
+
+        }
+
+        /* 頁首區-右側選單區超連結色彩 */
+        .header ul li a {
+            /* 選單區超連結底線:取消 */
+            text-decoration: none;
+            /* 超連結字體顏色 */
+            color: #4a1d06;
+            /* 字體大小 */
+            font-size: 16px
+        }
+
+        /* 右側超連結被碰到時的變化 */
+        .header ul li a:hover {
+            /* 字體色 */
+            color: #4091aa;
+            /* 背景色 */
+            background-color: rgb(184, 184, 183);
+        }
+
+
+        /* 內容區 */
+
+        .content {
+
+            background-color: #6f2f2f;
+            /* 內容置中 */
+            text-align: center;
+            /* 放大字體 */
+            font-size: 30px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+
+            color: #c9bab4;
+
+            /* border: 1px solid red; */
+
+        }
+
+        .content p {
+            /* 行距 */
+            line-height: 2;
+        }
+
+
+
+        /* 資訊區 */
+        .info {
+            background-color: #c9bab4;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+        }
+
+        .info .box {
+            display: inline-block;
+            background-color: #b4916a;
+            padding: 20px;
+            margin: 20px;
+            transition: all .5s;
+            /* 陰影效果 */
+            /* box-shadow: 水平位置 垂直位置 模糊度 陰影色彩; */
+            /* box-shadow: 10px -10px 10px #000; */
+
+            /* 上下左右都有陰影區 */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+        }
+
+        /* 碰到色塊 */
+        .box:hover {
+            transform: scale(1.2);
+        }
+
+        .box img {
+            width: 300px;
+            height: 300px;
+            transition: all .5s;
+        }
+
+        /* 碰到色塊時的圖片效果 */
+        .box:hover img {
+            border-radius: 50%;
+        }
+
+        .info .box h3 {
+            color: #432008;
+            font-size: 22px;
+        }
+
+        /* 頁尾區 */
+        .footer {
+            /* border:1px solid red; */
+            background-color: #7e7064;
+            color: #371804;
+            width: 1200px;
+            /* text-align: center; */
+            /* padding: 20px 0; */
+            margin: auto;
+        }
+
+        .footer .nav ul {
+            /* 項目清單選項 ● 取消 */
+            list-style: none;
+            /* 設定元素內容與元素自身上邊界的間距 */
+            padding-top: 10px;
+            /* 設定元素內容與元素自身下邊界的間距 */
+            padding-bottom: 10px;
+            /* display: inline; */
+
+        }
+
+        .footer .nav ul li {
+            /* 水平排列 */
+            display: inline-block;
+
+            /* 外間距=> margin */
+            margin-left: 150px;
+
+            /* 左右對齊 */
+            text-align: justify;
+        }
+
+        .footer .nav ul li img {
+            /* 寬度 */
+            width: 150px;
+            /* 高度 */
+            height: 150px;
+            /* 靠右對齊 */
+            /* 行內區塊可水平排列 */
+            display: inline-block;
+            /* 外間距=> margin */
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 最外層外框 -->
+    <div class="wrap">
+
+        <!-- 頁首區 -->
+        <div class="header">
+            <!-- 左側LOGO -->
+            <div class="coffee logo_icon"><a href="#"><img src="./img/coffee logo-03.png" alt="coffee logo_icon"></a>
+            </div>
+            <!-- 右上方JEN COFFEE (尚未設置點擊轉跳首頁) -->
+            <h1><a href="#"></a> JEN COFFEE</a></h1>
+
+            <!-- 右側超連結選單區 -->
+            <div class="nav">
+                <ul>
+                    <li><a href="./index.html">首頁</a></li>
+                    <li><a href="#">購物區</a></li>
+                    <li><a href="./web1111/demo1.html">關於我們</a></li>
+                    <li><a href="#">聯絡我們</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- 內容區 -->
+        <div class="content">
+
+            <!-- 標題 -->
+            <h2>精品等級咖啡豆</h2>
+            <h3>用最好的咖啡豆給你截然不同的體驗</h3>
+
+
+        </div>
+
+        <!-- 資訊區 -->
+        <div class="info">
+            <div class="box">
+                <img src="./img/coffeep07.png" alt="">
+                <h3>宏都拉斯。水洗。</h3>
+                <h3>NT$450</h3>
+            </div>
+            <div class="box">
+                <img src="./img/coffeep08.png" alt="">
+                <h3>哥倫比亞。天堂莊園。</h3>
+                <h3>NT$500</h3>
+            </div>
+            <div class="box">
+                <img src="./img/coffeep09.png" alt="">
+                <h3>蘇門答臘。曼特林。</h3>
+                <h3>NT$550</h3>
+            </div>
+
+
+
+            <div class="box">
+                <img src="./img/coffeep01.png" alt="">
+                <h3>多明尼加。冰種藍山。</h3>
+                <h3>NT$500</h3>
+            </div>
+            <div class="box">
+                <img src="./img/coffeep02.png" alt="">
+                <h3>巴西。喜拉朵。</h3>
+                <h3>NT$480</h3>
+            </div>
+            <div class="box">
+                <img src="./img/coffeep03.png" alt="">
+                <h3>瓜地馬拉。薇特南果。</h3>
+                <h3>NT$580</h3>
+            </div>
+
+
+
+            <div class="box">
+                <img src="./img/coffeep04.png" alt="">
+                <h3>巴拿馬。藝伎水洗。</h3>
+                <h3>NT$650</h3>
+
+            </div>
+            <div class="box">
+                <img src="./img/coffeep05.png" alt="">
+                <h3>衣索比亞。多玫。</h3>
+                <h3>NT$450</h3>
+            </div>
+            <div class="box">
+                <img src="./img/coffeep06.png" alt="">
+                <h3>淺焙肯亞。JEN嚴選。</h3>
+                <h3>NT$480</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- 頁尾區 -->
+    <div class="footer">
+
+        <!-- 地址區 -->
+        <div class="nav">
+            <ul>
+                <li>
+                    <p><img src="./img/coffee logo-03.png" alt=""> </p>
+                    <h4>JEN COFFEE</h4>
+                </li>
+
+                <li>
+                    <h5>地址：桃園市桃園區巷善街168巷168號 </h5>
+                    <h5>訂購電話：0939168168</h5>
+                    <h5>信箱：jen.coffee@gmail.com </h5>
+                    <h5>統一編號：90168168 </h5>
+                    <h5>食品業登錄字號： F-202265508-00168-2</h5>
+                    <h5>工廠登記編號：65168168 </h5>
+                    <small>Copyright &copy; 2024 - JEN COFFEE版權所有. All rights reserved.</small></p>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
